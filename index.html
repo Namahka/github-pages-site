@@ -3,11 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Site</title>
+  <title>Pricing | Ledger</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
+  <header class="site-header">
+    <a class="wordmark" href="#pricing" aria-label="Ledger home">ledger<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#platform">Platform</a>
+      <a href="#ledger-nodes">Ledger Nodes</a>
+      <a href="#telemetry">Telemetry</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="header-actions">
+      <a class="button button-outline" href="#pricing">Book Demo</a>
+      <a class="button button-primary" href="#pricing">Launch console</a>
+      <button class="account-button" type="button" aria-label="Account">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="8" r="3.5"></circle>
+          <path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="pricing">
+    <section class="pricing-section" aria-labelledby="pricing-title">
+      <p class="eyebrow">Simple, transparent pricing</p>
+      <h1 id="pricing-title">Choose your plan</h1>
+      <p class="section-description">Everything you need to build and scale with confidence.</p>
+
+      <div class="billing-tabs" aria-label="Billing frequency">
+        <span class="billing-tab is-active">Monthly</span>
+        <span class="billing-tab">Annual</span>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div>
+            <h2>Starter</h2>
+            <p class="plan-description">The essentials to get your team moving.</p>
+            <p class="price"><span class="price-amount">$49</span><span class="price-period">/ month</span></p>
+            <ul class="feature-list">
+              <li>Up to 3 ledger nodes</li>
+              <li>Core platform access</li>
+              <li>Standard telemetry</li>
+              <li>Email support</li>
+            </ul>
+          </div>
+          <a class="button button-outline card-button" href="#pricing">Get started</a>
+        </article>
+
+        <article class="pricing-card pricing-card-featured">
+          <div>
+            <p class="popular-label">Most popular</p>
+            <h2>Growth</h2>
+            <p class="plan-description">More power for growing teams and workloads.</p>
+            <p class="price"><span class="price-amount">$149</span><span class="price-period">/ month</span></p>
+            <ul class="feature-list">
+              <li>Up to 15 ledger nodes</li>
+              <li>Advanced platform access</li>
+              <li>Real-time telemetry</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
+          <a class="button button-primary card-button" href="#pricing">Choose Growth</a>
+        </article>
+
+        <article class="pricing-card">
+          <div>
+            <h2>Enterprise</h2>
+            <p class="plan-description">Flexible scale and support for your business.</p>
+            <p class="price"><span class="price-amount">Custom</span></p>
+            <ul class="feature-list">
+              <li>Unlimited ledger nodes</li>
+              <li>Custom integrations</li>
+              <li>Dedicated telemetry</li>
+              <li>Dedicated support</li>
+            </ul>
+          </div>
+          <a class="button button-outline card-button" href="#pricing">Contact sales</a>
+        </article>
+      </div>
+    </section>
   </main>
+  <footer class="metrics-footer" aria-label="Platform metrics">
+    <div class="metric">
+      <span class="metric-value">94%</span>
+      <span class="metric-description">Platform uptime</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">120ms</span>
+      <span class="metric-description">Average response time</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">100%</span>
+      <span class="metric-description">Customer focus</span>
+    </div>
+  </footer>
 </body>
 </html>
